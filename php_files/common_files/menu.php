@@ -6,7 +6,7 @@
       <nav>
         <ul>
           <li><a id="home" href="<?php echo $root_url ?>index.php">Home</a></li>
-          <li><a id="aboutus" href="<?php echo $root_url.$sub_folder ?>aboutus.php">About</a></li>
+          <li><a id="aboutus" href="#aboutus">About</a></li>
           <li class="sub-menu"><a id="services" href="#">Our Capabilities</a>
             <ul>
               <li><a id="webdesigning" name="services" href="<?php echo $root_url.$sub_folder ?>webdesigning.php">Intelligent Enterprise</a></li>

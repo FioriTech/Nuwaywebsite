@@ -33,7 +33,7 @@
                 <h1>Smart Solutions
                 for Intelligent Enterprise</h1>
                 <p>Helping Business Transform in a Digital World</p>
-                <a href="#" id="learnmore">Request Demo</a>
+                <a href="#requestdemo" id="learnmore">Request Demo</a>
             </div>
             <div id="innerimage">
                 <img src="images/d39f1a_d60c9ebb3234456481267d5d59b9cf9b_mv2.gif" alt="website analytics" width="550px" height="240px">
@@ -45,7 +45,7 @@
         </div>
     </div>
     <div class="clear"></div>
-    <div class="paragraph">
+    <div class="paragraph" id="aboutus">
         <h1>Who We Are</h1>
         <p>Nuway Solutions designs and deploys Digital Solutions for Fortune 2000 Companies. Nuway's heritage exhibits innovation and strategic foresight with respect to emerging technologies, maximizing its customer’s investments.<br><br>
         Nuway touches all things Digital, focusing on Intelligent Enterprises, and solutions designed to transform Operational Efficiencies.</p>

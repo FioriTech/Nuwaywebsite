@@ -628,7 +628,7 @@ header nav ul li ul li a:hover {
 }
 
 .pagetitle {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 30%;
     padding: 8px;
     width: 40%;
@@ -644,7 +644,7 @@ header nav ul li ul li a:hover {
 }
 @media (max-width:1000px){
 	.pagetitle {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 0;
     padding: 0;
     width: 100%;
