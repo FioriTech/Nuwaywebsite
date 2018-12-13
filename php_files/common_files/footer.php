@@ -11,8 +11,8 @@
 	<div class="widgets">
 	<a href="https://www.facebook.com/NUWAYsolutions/" target="_blank"><img src="<?php echo $root_url.$sub_folder ?>facebook.png" alt="facebook logo" height="40px"></a>
 	
-    <a href="#" target="_blank"><img src="<?php echo $root_url.$sub_folder ?>twitter.png" alt="twitter logo" height="40px"></a>
-    <a href="#"><img src="<?php echo $root_url.$sub_folder ?>linkedin.png" alt="linkedin logo" height="40px"></a>
+    <a href="https://twitter.com/nuwaysolutions" target="_blank"><img src="<?php echo $root_url.$sub_folder ?>twitter.png" alt="twitter logo" height="40px"></a>
+    <a href="https://in.linkedin.com/company/nuway-solutions" target="_blank"><img src="<?php echo $root_url.$sub_folder ?>linkedin.png" alt="linkedin logo" height="40px"></a>
 
     </div>
 </footer>

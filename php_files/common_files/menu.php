@@ -17,7 +17,7 @@
           </li>
           <li><a id="client" href="<?php echo $root_url.$sub_folder ?>clients.php">Clients</a></li>
 		  <li><a id="career" href="<?php echo $root_url.$sub_folder ?>career.php">Blog</a></li>
-      <li><a id="career" href="<?php echo $root_url.$sub_folder ?>career.php">Request Demo</a></li>
+      <li><a id="career" href="#requestdemo">Request Demo</a></li>
 		  <li><a id="contactus" href="<?php echo $root_url.$sub_folder ?>contactus.php">Contact Us</a></li>
 
         </ul>
