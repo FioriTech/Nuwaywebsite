@@ -224,6 +224,21 @@ header nav ul li ul li a:hover {
 } 
 }
 
+.ie_heading{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+@media(max-width: 900px){
+.ie_heading{
+    width: 90%;
+    font-size: 40px;
+}
+}
+
 .design {
     text-align: center;
     float: right;
@@ -280,6 +295,27 @@ header nav ul li ul li a:hover {
 .paragraph .fb-page{
 	margin-left:0%;
 	margin-top:2%;
+}
+}
+
+.ie_paragraph{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+.ie_paragraph ul{
+    text-align: left;
+    font-size: 19px;
+}
+
+.ie_paragraph ul li{
+    line-height: 30px;
+}
+
+@media(max-width: 900px){
+.ie_paragraph{
+    width: 90%;
 }
 }
 
@@ -393,6 +429,48 @@ header nav ul li ul li a:hover {
     color: white;
 }
 
+.aboutproducts .left_points{
+    width: 45%;
+    float: left;
+}
+
+.aboutproducts .right_points{
+    width: 45%;
+    float: right;
+}
+
+.aboutproducts .points_img{
+    margin: auto;
+    width: 40%;
+}
+
+.aboutproducts .divider{
+    border: 3px solid white;
+    width: 100%;
+    margin-top: -4px;
+}
+
+@media(max-width: 900px){
+.aboutproducts .left_points{
+    width: 90%;
+    float: left;
+}
+
+.aboutproducts .right_points{
+    width: 90%;
+    float: left;
+}
+
+.aboutproducts .points_img{
+    margin: auto;
+    width: 100%;
+}
+
+.aboutproducts .points_img img{
+    width: 100%;
+}
+}
+
 .aboutproducts p{
     text-align: center;
     font-weight:  bolder;
@@ -403,6 +481,22 @@ header nav ul li ul li a:hover {
     margin: auto;
     width:60%;
     text-align: right;
+}
+
+.aboutproducts .aboutproductsdata2{
+    margin: auto;
+    width:60%;
+    text-align: center;
+    line-height: 30px;
+}
+
+@media(max-width: 900px){
+.aboutproducts .aboutproductsdata2{
+    margin: auto;
+    width:100%;
+    text-align: center;
+    line-height: 30px;
+}
 }
 
 .aboutproducts .aboutproductsdata img{
@@ -1163,6 +1257,7 @@ header nav ul li ul li a:hover {
 
 .form {
     margin-left: 10%;
+    margin-top: 5%;
     display:flex;
 	justify-content:flex-start;
 }
