@@ -71,7 +71,7 @@
         <div class="demo">
         <i class="fas fa-circle-notch"></i><span style="font-size: 20px;font-weight: bold;">&nbsp;Request Demo</span>
         <p style="text-align: left; font-size: 25px; font-weight: bolder; ">To schedule a product demo with one of our product consultants, please fill in your contact details</p>
-        <form class="demoform">
+        <form class="demoform" method="post" action="backend/demo.php" target="_parent">
             <input type="text" name="name" placeholder="Name *">
             <input type="text" name="email" placeholder="Email *"><br>
             <textarea name="message" placeholder="Message"></textarea><br>

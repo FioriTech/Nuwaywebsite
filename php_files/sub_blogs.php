@@ -24,12 +24,12 @@
     <br>
     <br>
     <div class="blog-background">
-       <?php include 'backend/blogs.php' ?>
-       <br>
-       <br>
+      <?php 
+      $id1=$_GET['id']; 
+      ?>
+       <?php include 'backend/subblogs.php' ?>
     </div>
-   <br>
-   <br>
+   
     <?php include 'common_files/footer.php' ?>
 </body>
 </html>

@@ -117,7 +117,7 @@
             <input type="submit" name="submit" value="Send">
         </form>
         <br>
-        <div class="demotext">
+        <div class="demotext" method="post" action="backend/demo.php" target="_parent">
         <span class="span1">sales@nuwaysolutions.com</span>
         <span class="span2">&nbsp;Tel: 732-825-7888</span>
         <span class="span3">50 Cragwood Road, Ste. 228 South Plainfield, NJ 07080</span>

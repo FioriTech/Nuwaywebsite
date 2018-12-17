@@ -4,6 +4,11 @@ body {
 	font-size:17px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 #pagetop{
     bottom: 2%;
     right: 2%;
@@ -687,6 +692,120 @@ header nav ul li ul li a:hover {
     float: left;
     margin-left: 0px; 
     text-align: center;
+}
+}
+
+.blog-background{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    height: auto;
+    color: black;
+}
+
+.inner-blog-box{
+    width: 90%;
+    margin: auto;
+    border: 1px solid grey;
+}
+
+.inner-blog-box img{
+    width: 100%;
+}
+
+.inner-blog-box .blog-heading{
+    font-size: 22px;
+    text-align: left;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.inner-blog-box .blog-heading:hover{
+    color: #15B7F3;
+}
+
+.inner-blog-box .blog-desc{
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 5%;
+    font-weight: normal;
+    width: 90%;
+    overflow: hidden;
+    height:35px;
+}
+
+.inner-blog-box hr{
+    width: 90%;
+    margin-left: 5%;
+}
+
+@media(max-width: 900px){
+.blog-background{
+    width: 90%;
+}
+}
+
+.sub-blog-box{
+    width: 90%;
+    margin: auto;
+    border: 1px solid grey;
+    height: auto;
+}
+
+.sub-blog-box img{
+    width: 100%;
+}
+
+.sub-blog-box .sub-blog-heading{
+    font-size: 22px;
+    text-align: left;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.sub-blog-box .sub-blog-desc{
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 5%;
+    font-weight: normal;
+    width: 90%;
+}
+
+.sub-blog-box span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media(max-width: 900px){
+.sub-blog-box{
+    width: 90%;
+    margin: auto;
+    border: 1px solid grey;
+    height: auto;
+}
+
+.sub-blog-box img{
+    width: 100%;
+}
+
+.sub-blog-box .sub-blog-heading{
+    font-size: 22px;
+    text-align: left;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.sub-blog-box .sub-blog-desc{
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 5%;
+    font-weight: normal;
+    width: 90%;
+}
+
+.sub-blog-box span{
+    font-size: 18px;
+    font-weight: bold;
 }
 }
 
