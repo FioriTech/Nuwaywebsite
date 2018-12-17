@@ -4,10 +4,23 @@ body {
 	font-size:17px;
 }
 
+#pagetop{
+    bottom: 2%;
+    right: 2%;
+    position: fixed;
+    z-index: 1;
+}
+
+#pagetop img{
+    width: 50px;
+}
+
 .image {
     background: url('../images/backgrounds-blank-blue-953214.jpg') no-repeat center;
     background-size: cover;
     height: 450px;
+    z-index: -1;
+    background-attachment: fixed;
 }
 
 @media (max-width:1000px){
@@ -36,6 +49,8 @@ header {
 
 .logo {
   float: left;
+  margin-left: 2%;
+  width: 130px;
 }
 
 header nav {
@@ -209,6 +224,21 @@ header nav ul li ul li a:hover {
 } 
 }
 
+.ie_heading{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+@media(max-width: 900px){
+.ie_heading{
+    width: 90%;
+    font-size: 40px;
+}
+}
+
 .design {
     text-align: center;
     float: right;
@@ -265,6 +295,27 @@ header nav ul li ul li a:hover {
 .paragraph .fb-page{
 	margin-left:0%;
 	margin-top:2%;
+}
+}
+
+.ie_paragraph{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+.ie_paragraph ul{
+    text-align: left;
+    font-size: 19px;
+}
+
+.ie_paragraph ul li{
+    line-height: 30px;
+}
+
+@media(max-width: 900px){
+.ie_paragraph{
+    width: 90%;
 }
 }
 
@@ -368,6 +419,278 @@ header nav ul li ul li a:hover {
 }
 }
 
+.aboutproducts{
+    background: url('../images/backgrounds-blank-blue-953214.jpg') no-repeat center;
+    background-size: cover;
+    height: auto;
+    z-index: -1;
+    background-attachment: fixed;
+    padding: 15px 50px;
+    color: white;
+}
+
+.aboutproducts .left_points{
+    width: 45%;
+    float: left;
+}
+
+.aboutproducts .right_points{
+    width: 45%;
+    float: right;
+}
+
+.aboutproducts .points_img{
+    margin: auto;
+    width: 40%;
+}
+
+.aboutproducts .divider{
+    border: 3px solid white;
+    width: 100%;
+    margin-top: -4px;
+}
+
+@media(max-width: 900px){
+.aboutproducts .left_points{
+    width: 90%;
+    float: left;
+}
+
+.aboutproducts .right_points{
+    width: 90%;
+    float: left;
+}
+
+.aboutproducts .points_img{
+    margin: auto;
+    width: 100%;
+}
+
+.aboutproducts .points_img img{
+    width: 100%;
+}
+}
+
+.aboutproducts p{
+    text-align: center;
+    font-weight:  bolder;
+    font-size: 40px;
+}
+
+.aboutproducts .aboutproductsdata{
+    margin: auto;
+    width:60%;
+    text-align: right;
+}
+
+.aboutproducts .aboutproductsdata2{
+    margin: auto;
+    width:60%;
+    text-align: center;
+    line-height: 30px;
+}
+
+@media(max-width: 900px){
+.aboutproducts .aboutproductsdata2{
+    margin: auto;
+    width:100%;
+    text-align: center;
+    line-height: 30px;
+}
+}
+
+.aboutproducts .aboutproductsdata img{
+    float: left;
+}
+
+@media(max-width: 900px){
+    .aboutproducts p{
+    text-align: left;
+    font-size: 30px;
+}
+    .aboutproducts .aboutproductsdata{
+    margin: auto;
+    width:100%;
+    text-align: left;
+}
+}
+
+.qoutes{
+    text-align: center;
+    width: 100%;
+    height: 270px;
+    padding: 20px 0;
+}
+
+.qoutes hr{
+   margin: auto;
+   width: 5%;
+}
+
+.qoutes .slideshow{
+    overflow: hidden;
+    color: black;
+}
+
+.item-1, 
+.item-2, 
+.item-3,
+.item-4  {
+    position: absolute;
+    display: block;
+    width: 50%;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 26%; 
+}
+
+.item-1{
+    animation-name: anim-1;
+}
+
+.item-2{
+    animation-name: anim-2;
+}
+
+.item-3{
+    animation-name: anim-3;
+}
+
+.item-4{
+    animation-name: anim-4;
+}
+
+
+@keyframes anim-1 {
+    0%, 5% { display: none; opacity: 0; }
+  5%,20% { opacity: 1; }
+  25%, 100% { display: none; opacity: 0; }
+}
+
+@keyframes anim-2 {
+    0%, 25% { display: none; opacity: 0; }
+  30%, 45% { opacity: 1; }
+  50%, 100% { display: none; opacity: 0; }
+}
+
+@keyframes anim-3 {
+    0%, 50% { display: none; opacity: 0; }
+  55%, 70% { opacity: 1; }
+  75%, 100% { display: none; opacity: 0; }
+}
+
+@keyframes anim-4 {
+    0%, 75% { display: none; opacity: 0; }
+  80%, 95% { opacity: 1; }
+  100% { display: none; opacity: 0; }
+}
+
+@media(max-width: 900px){
+.qoutes{
+    height: 330px;
+}
+
+.qoutes hr{
+   width: 7%;
+}
+
+
+.item-1, 
+.item-2, 
+.item-3,
+.item-4  {
+    width: 90%;
+    font-size: 25px;
+    margin-left: 5%; 
+}
+}
+
+.aboutproducts .demo{
+    margin: auto;
+    width: 40%;
+}
+
+.aboutproducts .demo .demoform input[type=text]{
+    width: 48.5%;
+    padding: 5px 0;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 2%;
+}
+
+.aboutproducts .demo .demoform textarea{
+    width: 97%;
+    height: 120px; 
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 2%;
+}
+
+.aboutproducts .demo .demoform input[type=submit]{
+    width: 98%;
+    padding: 7px 0;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.aboutproducts .demo .demotext .span1{
+    width: 40%;
+    float: left;
+    font-size: 15px;
+    border-right: 1px solid white;
+    font-weight: bold;
+}
+
+.aboutproducts .demo .demotext .span2{
+    width: 27%;
+    float: left;
+    font-size: 15px;
+    border-right: 1px solid white;
+    font-weight: bold;
+}
+
+.aboutproducts .demo .demotext .span3{
+    width: 31%;
+    float: left;
+    font-size: 15px;
+    margin-left: 5px; 
+    font-weight: bold;
+}
+
+@media(max-width: 900px){
+.aboutproducts .demo{
+    margin: auto;
+    width: 100%;
+}
+
+.aboutproducts .demo .demotext .span1{
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+.aboutproducts .demo .demotext .span2{
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aboutproducts .demo .demotext .span3{
+    width: 100%;
+    float: left;
+    margin-left: 0px; 
+    text-align: center;
+}
+}
+
+
 .about {
     margin-top: 50px;
     margin-left: 130px;
@@ -399,7 +722,7 @@ header nav ul li ul li a:hover {
 }
 
 .pagetitle {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 30%;
     padding: 8px;
     width: 40%;
@@ -415,7 +738,7 @@ header nav ul li ul li a:hover {
 }
 @media (max-width:1000px){
 	.pagetitle {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 0;
     padding: 0;
     width: 100%;
@@ -934,6 +1257,7 @@ header nav ul li ul li a:hover {
 
 .form {
     margin-left: 10%;
+    margin-top: 5%;
     display:flex;
 	justify-content:flex-start;
 }

@@ -6,19 +6,18 @@
       <nav>
         <ul>
           <li><a id="home" href="<?php echo $root_url ?>index.php">Home</a></li>
-          <li><a id="aboutus" href="<?php echo $root_url.$sub_folder ?>aboutus.php">About</a></li>
           <li class="sub-menu"><a id="services" href="#">Our Capabilities</a>
             <ul>
-              <li><a id="webdesigning" name="services" href="<?php echo $root_url.$sub_folder ?>webdesigning.php">Intelligent Enterprise</a></li>
-              <li><a id="websitedevelopment" name="services" href="<?php echo $root_url.$sub_folder ?>websitedevelopment.php">Customer Experience</a></li>
-              <li><a id="digitalmarketing" name="services" href="<?php echo $root_url.$sub_folder ?>digitalmarketing.php">Digital Core & ERP</a></li>
-              <li><a id="infrastructureservice" name="services" href="<?php echo $root_url.$sub_folder ?>infrastructureservice.php">Innovation & Disruptive Technology</a></li>
+              <li><a id="intelligent_enterprise" name="services" href="<?php echo $root_url.$sub_folder ?>intelligent_enterprise.php">Intelligent Enterprise</a></li>
+              <li><a id="customer_exp" name="services" href="<?php echo $root_url.$sub_folder ?>customer_exp.php">Customer Experience</a></li>
+              <li><a id="digital" name="services" href="<?php echo $root_url.$sub_folder ?>digital.php">Digital Core & ERP</a></li>
+              <li><a id="innovation" name="services" href="<?php echo $root_url.$sub_folder ?>innovation.php">Innovation & Disruptive Technology</a></li>
             </ul>
           </li>
           <li><a id="client" href="<?php echo $root_url.$sub_folder ?>clients.php">Clients</a></li>
-		  <li><a id="career" href="<?php echo $root_url.$sub_folder ?>career.php">Blog</a></li>
-      <li><a id="career" href="<?php echo $root_url.$sub_folder ?>career.php">Request Demo</a></li>
-		  <li><a id="contactus" href="<?php echo $root_url.$sub_folder ?>contactus.php">Contact Us</a></li>
+		  <li><a id="blog" href="<?php echo $root_url.$sub_folder ?>blog.php">Blog</a></li>
+      <li><a id="career" href="#requestdemo">Request Demo</a></li>
+		  <li><a id="contact" href="<?php echo $root_url.$sub_folder ?>contact.php">Contact Us</a></li>
 
         </ul>
       </nav>

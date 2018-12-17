@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <title>Fiori Technologies</title>
+    <title>Nuway Solutions</title>
     <link href="css_file/common.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="https://static.wixstatic.com/media/bec1f9_78f7d4ef1fe54e33b95b4739c644555a.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/bec1f9_78f7d4ef1fe54e33b95b4739c644555a.png" type="image/png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -21,10 +21,10 @@
   js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
+<a href="#top" id="pagetop"><img src="images/download.png"></a>
     <div class="image">
-        <header>
-      <img src="images/logo.png" alt="FioriTech Logo" height="90px" class="logo">
+        <header id="top">
+      <img src="images/logo.png" alt="FioriTech Logo" height="120px" class="logo">
 	  <?php include 'php_files/common_files/menu.php' ?>
 	  </header>
         <div class="clear"></div>
@@ -33,7 +33,7 @@
                 <h1>Smart Solutions
                 for Intelligent Enterprise</h1>
                 <p>Helping Business Transform in a Digital World</p>
-                <a href="#" id="learnmore">Request Demo</a>
+                <a href="#requestdemo" id="learnmore">Request Demo</a>
             </div>
             <div id="innerimage">
                 <img src="images/d39f1a_d60c9ebb3234456481267d5d59b9cf9b_mv2.gif" alt="website analytics" width="550px" height="240px">
@@ -45,7 +45,7 @@
         </div>
     </div>
     <div class="clear"></div>
-    <div class="paragraph">
+    <div class="paragraph" id="aboutus">
         <h1>Who We Are</h1>
         <p>Nuway Solutions designs and deploys Digital Solutions for Fortune 2000 Companies. Nuway's heritage exhibits innovation and strategic foresight with respect to emerging technologies, maximizing its customer’s investments.<br><br>
         Nuway touches all things Digital, focusing on Intelligent Enterprises, and solutions designed to transform Operational Efficiencies.</p>
@@ -112,18 +112,88 @@
         </div>
     </div>
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <div class="clear"></div>
-    <div>
-        
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="aboutproducts">
+        <p>How We Can Help You</p>
+        <div class="aboutproductsdata">
+            <img src="images/d0220c_a7f38a088979498b9254e7a1c6ccac1d_mv2.webp">
+            <h4><span style="font-size:22px;">Harness the full Power of your ERP &amp; CRM Solutions</span></h4>
+            <span>SAP ERP, S4/Hana, C4/HANA, Salesforce, Microsoft Dynamics, NetSuite ERP to name a few.<br>
+            We will simplify the complexity of your ERP system while the user will benefit from our extensive easy-to-use visualization tools</span>
+        </div>
+        <div class="clear"></div>
+
+        <div class="aboutproductsdata">
+            <img src="images/d0220c_e3bf6981882c401eb9faabbc11062691_mv2.webp">
+            <h4><span style="font-size:22px;">End-to-End BI implementations and enabling beautiful, interactive and data-driven dashboards</span></h4>
+            <span>Whatever or wherever be your data, We will give you the state-of-the-art architecture and enable interactive dashboard that give you meaningful insights into your business</span>
+        </div>
+        <div class="clear"></div>
+
+        <div class="aboutproductsdata">
+            <img src="images/d0220c_6140a2819d134cc28245da959cd2336b_mv2.webp">
+            <h4><span style="font-size:22px;">Migrating your existing BI & Reporting Framework</span></h4>
+            <span>If you don’t innovate, you lose.<br>
+            Reporting should be easy and fast. Our BI tools and services utilize a  Natural Language Query which is surprisingly robust as you can simply type in a question and BI will select the appropriate visualization for you</span>
+        </div>
+    <br>
+    <br>
+    <br>
     </div>
+    <div class="clear"></div>
+    <div class="qoutes">
+        <p>Testimonials</p>
+        <hr>
+        <div class="slideshow">
+            <p class="item-1">"Nuway is simply the very best!"
+                <br>
+               <span style="font-size: 17px; color:red;">Senior Account Executive
+               SAP North America</span></p>
+
+            <p class="item-2">"We have welcomed our long standing relationship with Nuway for many reasons, but mainly because they continue to impress us each and every day."<br>
+            <span style="font-size: 17px; color:red;">IS Executive, 2017
+            Fortune 1000 Manufacturing Company</span></p>
+
+            <p class="item-3">"The only reason we felt that we could implement such an innovative solution was because Nuway was our partner."<br>
+            <span style="font-size: 17px; color:red;">VP, Commercial Operations
+            Fortune 1000 Consumer Products Company</span></p>
+
+            <p class="item-4">"Nuway's latest CX Implementation and Rollout at one of our global manufacturing customer's should be the model for ALL global Cloud projects."<br>
+            <span style="font-size: 17px; color:red;">Senior Director, SAP
+            Customer Experience (CX)</span></p>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="aboutproducts" id="requestdemo">
+        <div class="demo">
+        <i class="fas fa-circle-notch"></i><span style="font-size: 20px;font-weight: bold;">&nbsp;Request Demo</span>
+        <p style="text-align: left; font-size: 25px; font-weight: bolder; ">To schedule a product demo with one of our product consultants, please fill in your contact details</p>
+        <form class="demoform">
+            <input type="text" name="name" placeholder="Name *">
+            <input type="text" name="email" placeholder="Email *"><br>
+            <textarea name="message" placeholder="Message"></textarea><br>
+            <input type="submit" name="submit" value="Send">
+        </form>
+        <br>
+        <div class="demotext">
+        <span class="span1">sales@nuwaysolutions.com</span>
+        <span class="span2">&nbsp;Tel: 732-825-7888</span>
+        <span class="span3">50 Cragwood Road, Ste. 228 South Plainfield, NJ 07080</span>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <br>
     
     <?php include 'php_files/common_files/footer.php' ?>	
 </body>
