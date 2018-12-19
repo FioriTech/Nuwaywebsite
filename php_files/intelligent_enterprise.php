@@ -9,14 +9,15 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 
 <div id="fb-root"></div>
-<a href="#top" id="pagetop"><img src="../images/download.png"></a>
+<a href="#" id="pagetop" style="display: none;"><img src="../images/download.png"></a>
     <div class="image">
-        <header id="top">
+        <header>
       <img src="../images/logo.png" alt="FioriTech Logo" height="120px" class="logo">
 	  <?php include 'common_files/menu.php' ?>
 	  </header>
@@ -106,29 +107,24 @@
     </div>
     <div class="clear"></div>
     <div><br><br><br><br><br><br></div>
-    <div class="aboutproducts" id="requestdemo">
-        <div class="demo">
-        <i class="fas fa-circle-notch"></i><span style="font-size: 20px;font-weight: bold;">&nbsp;Request Demo</span>
-        <p style="text-align: left; font-size: 25px; font-weight: bolder; ">To schedule a product demo with one of our product consultants, please fill in your contact details</p>
-        <form class="demoform">
-            <input type="text" name="name" placeholder="Name *">
-            <input type="text" name="email" placeholder="Email *"><br>
-            <textarea name="message" placeholder="Message"></textarea><br>
-            <input type="submit" name="submit" value="Send">
-        </form>
-        <br>
-        <div class="demotext">
-        <span class="span1">sales@nuwaysolutions.com</span>
-        <span class="span2">&nbsp;Tel: 732-825-7888</span>
-        <span class="span3">50 Cragwood Road, Ste. 228 South Plainfield, NJ 07080</span>
-        </div>
-        </div>
-        <br>
-        <br>
-        <br>
-    </div>
+     <?php include 'common_files/request_demo.php' ?>
     <br>
     
     <?php include 'common_files/footer.php' ?>	
+    <script>
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#pagetop').fadeIn(); 
+        } else { 
+            $('#pagetop').fadeOut(); 
+        } 
+    }); 
+    $('#pagetop').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
 </body>
 </html>
