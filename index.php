@@ -9,10 +9,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -21,9 +21,9 @@
   js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<a href="#top" id="pagetop"><img src="images/download.png"></a>
+<a href="#" id="pagetop" style="display: none;"><img src="images/download.png"></a>
     <div class="image">
-        <header id="top">
+        <header>
       <img src="images/logo.png" alt="FioriTech Logo" height="120px" class="logo">
 	  <?php include 'php_files/common_files/menu.php' ?>
 	  </header>
@@ -66,7 +66,7 @@
             <span>
                 We have deep heritage and experise in all things Cloud CRM. Whether it's SAP C/4HANA, Salesforce, Dynamics 365, NetSuite or more, we're leading the Customer 360 revolution of today's evolving "CX" landscape
             </span>
-            <a href="#">+Learn More</a>
+            <a href="php_files/customer_exp.php">+Learn More</a>
         </div>
         <div class="subservice">
             <p>Intelligent Enterprise</p>
@@ -80,7 +80,7 @@
             <span>
                 Run your business more effectively and efficiently using powerful yet nimble reporting analytics and tools. Start your journey towards modernizing your data assets to achieve the outcomes you want faster.<br>
             </span>
-            <a href="#">+Learn More</a>
+            <a href="php_files/intelligent_enterprise.php">+Learn More</a>
         </div>
 
         <div class="subservice">
@@ -94,7 +94,7 @@
             <span>
                Let us help you evaluate your core ERP systems, and learn about the latest  In-memory processing that offers efficiency, and easy connections to big data and transactional processes, to drive growth and innovation. <br>
             </span>
-            <a href="#">+Learn More</a>
+            <a href="php_files/digital.php">+Learn More</a>
         </div>
 
         <div class="subservice">
@@ -108,7 +108,7 @@
             <span>
                Let our expertise help you get ahead of the curve. To remain at the forefront, you need to quickly adapt and embrace the latest technological advancements, and that's exactly what we implement for our clients. <br>
             </span>
-            <a href="#">+Learn More</a>
+            <a href="php_files/innovation.php">+Learn More</a>
         </div>
     </div>
     <br />
@@ -171,30 +171,25 @@
             Customer Experience (CX)</span></p>
         </div>
     </div>
-    <div class="clear"></div>
-    <div class="aboutproducts" id="requestdemo">
-        <div class="demo">
-        <i class="fas fa-circle-notch"></i><span style="font-size: 20px;font-weight: bold;">&nbsp;Request Demo</span>
-        <p style="text-align: left; font-size: 25px; font-weight: bolder; ">To schedule a product demo with one of our product consultants, please fill in your contact details</p>
-        <form class="demoform" method="post" action="php_files/backend/demo.php" target="_parent">
-            <input type="text" name="name" placeholder="Name *">
-            <input type="text" name="email" placeholder="Email *"><br>
-            <textarea name="message" placeholder="Message"></textarea><br>
-            <input type="submit" name="submit" value="Send">
-        </form>
-        <br>
-        <div class="demotext">
-        <span class="span1">sales@nuwaysolutions.com</span>
-        <span class="span2">&nbsp;Tel: 732-825-7888</span>
-        <span class="span3">50 Cragwood Road, Ste. 228 South Plainfield, NJ 07080</span>
-        </div>
-        </div>
-        <br>
-        <br>
-        <br>
-    </div>
+    
+    <?php include 'php_files/common_files/request_demo.php' ?>
     <br>
     
     <?php include 'php_files/common_files/footer.php' ?>	
+    <script>
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#pagetop').fadeIn(); 
+        } else { 
+            $('#pagetop').fadeOut(); 
+        } 
+    }); 
+    $('#pagetop').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
 </body>
 </html>

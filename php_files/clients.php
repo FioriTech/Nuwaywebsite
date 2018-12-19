@@ -9,11 +9,13 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+	<a href="#" id="pagetop" style="display: none;"><img src="../images/download.png"></a>
     <div class="image1">
-        <header id="top">
+        <header>
       <img src="../images/logo.png" alt="FioriTech Logo" height="120px" class="logo">
 	  <?php include 'common_files/menu.php' ?>
 	  </header>
@@ -31,7 +33,7 @@
 	<div class="container">
 	<div class="box"><a href="#" target="_blank"><img src="../images/johnson.png" alt="johnson logo" height="120px"></a></div>
 	<div class="box"><a href="#" target="_blank"><img src="../images/novartis.png" alt="novartis logo" height="130px"></a></div>
-	<div class="box"><a href="#" target="_blank"><img src="../images/Smithfield.png" alt="Smithfield logo" height="50px" width="290px"></a></div>
+	<div class="box"><a href="#" target="_blank"><img src="../images/Smithfield.png" alt="Smithfield logo" height="50px" width="280px"></a></div>
 	</div>
 	<br>
 	<div class="container">
@@ -49,9 +51,24 @@
 	<div class="container">
 	<div class="box"><a href="#" target="_blank"><img src="../images/disney.png" alt="disney logo" height="80px"></a></div>
 	<div class="box"><a href="#" target="_blank"><img src="../images/chgh.png" alt="chgh logo" height="70px"></a></div>
-	<div class="box"><a href="#" target="_blank"><img src="../images/office-depot.png" alt="office-depot logo" height="60px"></a></div>
+	<div class="box"><a href="#" target="_blank"><img src="../images/office-depot.png" alt="office-depot logo" height="55px"></a></div>
 	</div>
 	<br>
     <?php include 'common_files/footer.php' ?>
+    <script>
+    $(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#pagetop').fadeIn(); 
+        } else { 
+            $('#pagetop').fadeOut(); 
+        } 
+    }); 
+    $('#pagetop').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
 </body>
 </html>
